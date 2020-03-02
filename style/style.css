@@ -26,7 +26,7 @@
 
 .logo {
   width: 220px;
-  height: 70px;
+  height: 73px;
 }
 
 a {
@@ -216,45 +216,86 @@ li > .nav-link:hover {
   .aside-right {
     min-width: 19%;
   }
+  .flex-boxs {
+    margin: 10px -5px;
+  }
   .img-box {
     height: 60px;
     border: 5px rgb(208, 187, 187) solid;
-    border-radius: 100%;
-  }
-  .box{
-    width: calc(50% - 20px);
-  }
-  .box > h1 {
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 10px;
-  }
-  .box > p {
-    padding: 15px 0 15px;
-    flex-grow: 1;
-    font-size: 12px;
   }
   
+  .box > h1 {
+    font-size: 17px;
+  }
+  .box > p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
   .box > a {
-    border: 1px rgb(112, 80, 118) solid;
-    border-radius: 20px;
-    background: rgb(112, 80, 118);
     width: 60px;
-    height: 30px;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
     font-size: 15px;
     padding-top: 6px;
-    transition: all 0.5s;
   }
 }
 
-@media (max-width: 479px) { 
+@media(max-width: 767px){
+  .box {
+    width: calc(50% - 20px);
+  }
+  .flex-boxs {
+    margin: 10px -5px;
+  }
+  .box > h1 {
+    font-size: 17px;
+  }
+  .box > p {
+    font-size: 15px;
+  }
+  .box > a {
+    width: 70px;
+    font-size: 17px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 479px) {
   .header {
     background: blue;
   }
-  .box{
-    width: calc(100% - 20px);
+  .box {
+    width: 100%;
+  }
+  .flex-boxs {
+    margin: 10px 5px;
+  }
+  .nav {
+    display: none;
+  }
+  .logo {
+    width: 120px;
+    height: 40px;
+  }
+  .container-logo-nav {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .box > h1 {
+    font-size: 17px;
+  }
+  .box > p {
+    font-size: 15px;
+  }
+
+  .box > a {
+    width: 70px;
+    font-size: 17px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 415px) {
+  .box > p {
+    font-size: 14px;
   }
 }
